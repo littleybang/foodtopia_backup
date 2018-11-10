@@ -1,0 +1,29 @@
+$mainColor : #FF4343;
+
+nav {
+    font-family: '微軟正黑體';
+    .navbar-brand {
+        font-weight: 600 !important;
+        font-size: 1.5em !important;
+    }
+    li {
+        margin-left:40px; 
+        font-size: .9em;
+    }
+    a {
+        color : $mainColor !important;
+    }
+    img {
+        width: 1.5em;
+        margin-right: 20px;
+    }
+    form {
+        input {
+            border: 1px solid $mainColor !important;
+            border-radius: 20px !important;
+        }
+        img {
+            transform: translateX(-50px);
+        }
+    }
+} 
