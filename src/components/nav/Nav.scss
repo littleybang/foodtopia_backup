@@ -16,7 +16,9 @@ nav {
     img {
         width: 1.5em;
         margin-right: 20px;
+        cursor: pointer;
     }
+   
     form {
         input {
             border: 1px solid $mainColor !important;

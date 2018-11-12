@@ -32,18 +32,24 @@ class Nav extends Component {
                 </li>
 
               </ul>
-              <img src={require('./icons/profile.png')} />
+              <img id='members' src={require('./icons/profile.png')} />
               <img src={require('./icons/shopping-bag.png')} />
-                <form className="form-inline my-2 my-lg-0">
-                    <input className="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" />
-              <img src={require('./icons/Group 13.png')} />
-          </form>
-        </div>
-      </div>
-      </nav>
-            </React.Fragment>
-              );
-          }
-      }
-      
-      export default Nav;
+              <form className="form-inline my-2 my-lg-0">
+                <input className="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" />
+                <img src={require('./icons/Group 13.png')} />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </React.Fragment>
+    );
+  }
+  componentDidMount() {
+    var members = document.getElementById('members');
+    members.addEventListener('click',function(){
+      alert('Working here');
+    })
+  }
+}
+
+export default Nav;
