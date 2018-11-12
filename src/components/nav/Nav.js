@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import "./Nav.scss";
 
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -46,8 +47,12 @@ class Nav extends Component {
   }
   componentDidMount() {
     var members = document.getElementById('members');
+    var lightBox = document.getElementById('lightBox');
     members.addEventListener('click',function(){
-      alert('Working here');
+      lightBox.style.display = 'flex';
+      setTimeout(function(){
+        lightBox.style.opacity = '1';
+      },100)
     })
   }
 }
