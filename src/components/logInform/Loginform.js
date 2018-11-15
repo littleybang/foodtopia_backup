@@ -8,16 +8,16 @@ class Loginform extends Component {
     render() {
         return (
             <React.Fragment>
-                <div id='lightBox' class="lightBox">
-                    <div id='close' class='close'>×</div>
+                <div id='lightBox' className="lightBox">
+                    <div id='close' className='close'>×</div>
 
                     {/* form */}
 
-                    <div class="module form-module" id="form-module">
-                        <div class="toggle" type="button"><i class="fa fa-times fa-pencil">註冊</i>
-                            <div class="tooltip">點我</div>
+                    <div className="module form-module" id="form-module">
+                        <div className="toggle" type="button"><i className="fa fa-times fa-pencil">註冊</i>
+                            <div className="tooltip">點我</div>
                         </div>
-                        <div class="form">
+                        <div className="form">
                             <h2>會員登入</h2>
                             <form>
                                 <input type="text" placeholder="帳號" />
@@ -25,7 +25,7 @@ class Loginform extends Component {
                                 <button type="button">登入</button>
                             </form>
                         </div>
-                        <div class="form">
+                        <div className="form">
                             <h2>會員註冊</h2>
                             <form>
                                 <input type="text" placeholder="帳號" />
@@ -35,7 +35,7 @@ class Loginform extends Component {
                                 <button type="button">註冊</button>
                             </form>
                         </div>
-                        <div class="cta" type="button"><a href="">忘記密碼?</a></div>
+                        <div className="cta" type="button"><a href="">忘記密碼?</a></div>
                     </div>
 
                     {/* form */}
